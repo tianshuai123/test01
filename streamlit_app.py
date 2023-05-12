@@ -1,28 +1,10 @@
-# -*- coding: utf-8 -*-
-
 import streamlit as st
-import pandas as pd
-import numpy as np
-import altair as alt
+from datetime import time, datetime
 
 
-st.header('st.write')
+st.header('st.slider')
 
+st.subheader('Slider')
 
-st.write('Little fish is so cute :sunglasses:')
-st.write(1234)
-
-df = pd.DataFrame({
-    'first_column': [1, 2, 3, 4],
-    'second column': [10, 20, 30, 40]
-    })
-st.write(df)
-
-st.write('Below is a DataFrame: ', df)
-
-df2 = pd.DataFrame(
-     np.random.randn(200, 3),
-     columns=['a', 'b', 'c'])
-c = alt.Chart(df2).mark_circle().encode(
-     x='a', y='b', size='c', color='c', tooltip=['a', 'b', 'c'])
-st.write(c)
+age = st.slider('How old are you?', 0, 130, 25)
+st.write(f"I'm {age} years old")
