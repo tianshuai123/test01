@@ -8,15 +8,6 @@ import altair as alt
 
 st.header('st.write')
 
-st.markdown('Hello, World!')
-st.header('Hello, World!')
-st.subheader('Hello, World!')
-st.caption('Hello, World!')
-st.text('Hello, World!')
-st.latex('Hello, World!')
-st.code('Hello, World!')
-st.write('Hello, World!')
-
 
 st.write('Hello, *World!* :sunglasses:')
 st.write(1234)
