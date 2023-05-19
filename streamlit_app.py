@@ -4,7 +4,7 @@ from streamlit_chat import message
  
  
 # 填写 API key
-openai.api_key = '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'
+openai.api_key = ''
  
  
 # 如果没有 prompts 这个 session_state，就初始化
